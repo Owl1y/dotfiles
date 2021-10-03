@@ -39,11 +39,12 @@ alias pacman-force-uninstalled="pacman -D --asdep" # Mark one or more installed 
 
 alias nv="nvim"
 
-alias yt="youtube-dl"
 
+alias yt="youtube-dl"
 alias ytjson="youtube-dl --skip-download --write-info-json"
 
-alias nf="neofetch"
+
+
 
 alias ls="exa --icons --grid --group-directories-first"
 alias lsa="exa --icons -a --group-directories-first"
@@ -51,7 +52,7 @@ alias lt='exa --tree --icons --level=2'
 alias lta='exa --tree --icons'
 
 alias bpt='bpytop'
-
+alias mac='/var/lib/libvirt/images'
 
 
 
