@@ -40,8 +40,8 @@ alias pacman-force-uninstalled="pacman -D --asdep" # Mark one or more installed 
 alias nv="nvim"
 
 
-alias yt="youtube-dl"
-alias ytjson="youtube-dl --skip-download --write-info-json"
+alias yt="yt-dlp"
+alias ytjson="yt --skip-download --write-info-json"
 
 
 
