@@ -11,6 +11,7 @@ export ZSH="/home/a/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="robbyrussell"
 
+path+=('/home/a/.local/bin')
 
 plugins=(git)
 

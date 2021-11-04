@@ -382,5 +382,6 @@ schemes:
 # *solarized-light
 # *solarized-dark
 # *tomorrow-night
+# *one-dark
 
 colors: *one-dark
