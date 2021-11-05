@@ -21,6 +21,15 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR=vim
 
 
+
+
+#   █████╗ ██╗     ██╗ █████╗ ███████╗███████╗███████╗
+#  ██╔══██╗██║     ██║██╔══██╗██╔════╝██╔════╝██╔════╝
+#  ███████║██║     ██║███████║███████╗█████╗  ███████╗
+#  ██╔══██║██║     ██║██╔══██║╚════██║██╔══╝  ╚════██║
+#  ██║  ██║███████╗██║██║  ██║███████║███████╗███████║
+#  ╚═╝  ╚═╝╚══════╝╚═╝╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝
+
 alias upgrade="sudo pacman -Syu"              # Synchronize with repositories and then upgrade packages that are out of date on the local system.
 alias pacman-download="pacman -Sw"            # Download specified package(s) as .tar.xz ball
 alias pac="sudo pacman -S"                    # Install specific package(s) from the repositories
@@ -38,13 +47,12 @@ alias pacman-provides-="pacman -Qo"           # Show package(s) owning the speci
 alias pacman-force-installed="pacman -D --asexp"   # Mark one or more installed packages as explicitly installed 
 alias pacman-force-uninstalled="pacman -D --asdep" # Mark one or more installed packages as non explicitly installed
 
+alias lv="lvim"
 alias nv="nvim"
 
 
 alias yt="yt-dlp"
 alias ytjson="yt --skip-download --write-info-json"
-
-
 
 
 alias ls="exa --icons --grid --group-directories-first"
@@ -55,9 +63,5 @@ alias lta='exa --tree --icons'
 alias bpt='bpytop'
 alias mac='/var/lib/libvirt/images'
 
-
-
-
-#export PATH="home/a/.local/share/lunarvim:$PATH"
 
 eval "$(starship init zsh)"
