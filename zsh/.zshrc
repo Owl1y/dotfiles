@@ -47,6 +47,10 @@ alias pacman-provides-="pacman -Qo"           # Show package(s) owning the speci
 alias pacman-force-installed="pacman -D --asexp"   # Mark one or more installed packages as explicitly installed 
 alias pacman-force-uninstalled="pacman -D --asdep" # Mark one or more installed packages as non explicitly installed
 
+alias pacfzf="pacman -Slq | fzf --multi --preview 'pacman -Si {1}' | xargs -ro sudo pacman -S"
+alias parufzf="paru -Slq | fzf --multi --preview 'paru -Si {1}' | xargs -ro paru -S"
+
+
 alias lv="lvim"
 alias nv="nvim"
 
