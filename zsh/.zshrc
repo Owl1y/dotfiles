@@ -22,7 +22,6 @@ export EDITOR=vim
 
 
 
-
 #   █████╗ ██╗     ██╗ █████╗ ███████╗███████╗███████╗
 #  ██╔══██╗██║     ██║██╔══██╗██╔════╝██╔════╝██╔════╝
 #  ███████║██║     ██║███████║███████╗█████╗  ███████╗
@@ -32,7 +31,7 @@ export EDITOR=vim
 
 alias upgrade="sudo pacman -Syu"              # Synchronize with repositories and then upgrade packages that are out of date on the local system.
 alias pacman-download="pacman -Sw"            # Download specified package(s) as .tar.xz ball
-alias pac="sudo pacman -S"                    # Install specific package(s) from the repositories
+alias pac="sudo pacman -Syu"                    # Install specific package(s) from the repositories
 alias pacman-install-file="sudo pacman -U"    # Install specific package not from the repositories but from a file 
 alias pacr="sudo pacman -R"                   # Remove the specified package(s), retaining its configuration(s) and required dependencies
 alias pacman-purge="sudo pacman -Rns"         # Remove the specified package(s), its configuration(s) and unneeded dependencies
@@ -57,12 +56,24 @@ alias nv="nvim"
 
 alias yt="yt-dlp"
 alias ytjson="yt --skip-download --write-info-json"
+alias ytba="yt -f bestaudio" #gets the best audio 
+
 
 
 alias ls="exa --icons --grid --group-directories-first"
 alias lsa="exa --icons -a --group-directories-first"
 alias lt='exa --tree --icons --level=2'
 alias lta='exa --tree --icons'
+alias lla='ll -ah'
+
+
+
+
+
+
+
+
+
 
 alias bpt='bpytop'
 alias mac='/var/lib/libvirt/images'
