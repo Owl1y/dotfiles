@@ -68,13 +68,6 @@ alias lla='ll -ah'
 
 
 
-
-
-
-
-
-
-
 alias bpt='bpytop'
 alias mac='/var/lib/libvirt/images'
 
