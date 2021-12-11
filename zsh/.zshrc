@@ -67,8 +67,6 @@ alias lta='exa --tree --icons'
 alias lla='ll -ah'
 alias lss="ls -s extension"
 
-
-alias bpt='bpytop'
 alias mac='/var/lib/libvirt/images'
 
 
