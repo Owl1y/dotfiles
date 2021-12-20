@@ -57,8 +57,8 @@ alias nv="nvim"
 alias yt="yt-dlp"
 alias ytjson="yt --skip-download --write-info-json"
 alias ytba="yt -f bestaudio" #gets the best audio 
-
-
+alias ytbe='yt -f "bv+ba/b"'
+alias ytbext='yt -S "ext"'
 
 alias ls="exa --icons --grid --group-directories-first"
 alias lsa="exa --icons -a --group-directories-first"
