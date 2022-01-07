@@ -50,10 +50,10 @@ alias nv="nvim"
 
 
 alias yt="yt-dlp"
-alias ytjson="yt --skip-download --write-info-json"
+alias ytjson="yt --skip-download --write-info-json" # downloads json video info
 alias ytba="yt --audio-format best -x" #gets the best audio 
-alias ytbe='yt -f "bv+ba/b"'
-alias ytbext='yt -S "ext"'
+alias ytbe='yt -f "bv+ba/b"' # best audio and video 
+alias ytbext='yt -S "ext"' # best extension Download 
 
 alias ls="exa --icons --grid --group-directories-first"
 alias lsa="exa --icons -a --group-directories-first"
