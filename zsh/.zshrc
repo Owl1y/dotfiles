@@ -37,7 +37,7 @@ alias pacQi="pacman -Qi"              # Display information about a given packag
 alias pacman-dbsearch="pacman -Qs"            # Search for package(s) in the local database
 alias paclist="pacman -Qdt"      # List all packages which are orphaned
 alias pacCC="sudo pacman -Scc"                # Clean cache - delete all the package files in the cache
-alias pacman-list-package-files="pacman -Ql"  # List all files installed by a given package
+alias pacQl="pacman -Ql"  # List all files installed by a given package
 alias pacman-provides-="pacman -Qo"           # Show package(s) owning the specified file(s)
 alias pacman-force-installed="pacman -D --asexp"   # Mark one or more installed packages as explicitly installed 
 alias pacman-force-uninstalled="pacman -D --asdep" # Mark one or more installed packages as non explicitly installed
@@ -51,9 +51,14 @@ alias nv="nvim"
 
 alias yt="yt-dlp"
 alias ytjson="yt --skip-download --write-info-json" # downloads json video info
+alias ytF="yt -F"
+alias yta="yt --audio-format -x"
 alias ytba="yt --audio-format best -x" #gets the best audio 
 alias ytbe='yt -f "bv+ba/b"' # best audio and video 
 alias ytbext='yt -S "ext"' # best extension Download 
+
+
+
 
 alias ls="exa --icons --grid --group-directories-first"
 alias lsa="exa --icons -a --group-directories-first"
