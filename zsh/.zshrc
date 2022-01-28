@@ -48,6 +48,7 @@ alias parufzf="paru -Slq | fzf --multi --preview 'paru -Si {1}' | xargs -ro paru
 alias lv="lvim"
 alias nv="nvim"
 
+alias mi="mediainfo"
 
 alias yt="yt-dlp"
 alias ytjson="yt --skip-download --write-info-json" # downloads json video info
