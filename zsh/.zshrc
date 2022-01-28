@@ -56,7 +56,7 @@ alias yta="yt --audio-format -x"
 alias ytba="yt --audio-format best -x" #gets the best audio 
 alias ytbe='yt -f "bv+ba/b"' # best audio and video 
 alias ytbext='yt -S "ext"' # best extension Download 
-
+alias ytmp3="youtube-dl --extract-audio --audio-format mp3 "
 
 
 
