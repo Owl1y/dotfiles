@@ -52,7 +52,8 @@ alias mi="mediainfo"
 
 alias yt="yt-dlp"
 alias ytjson="yt --skip-download --write-info-json" # downloads json video info
-alias ytF="yt -F"
+alias ytF="yt -F" # shows me different video types
+alias ytf ="yt -f" # i have to enter the ID to get the file i want
 alias yta="yt --audio-format -x"
 alias ytba="yt --audio-format best -x" #gets the best audio 
 alias ytbe='yt -f "bv+ba/b"' # best audio and video 
