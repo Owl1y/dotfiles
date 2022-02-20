@@ -71,6 +71,8 @@ alias lss="ls -s extension"
 alias lls="ll --sort newest"
 
 alias mac='/var/lib/libvirt/images'
+alias spot="flatpak run com.spotify.Client"
 
+eval "$(fnm env --use-on-cd)"
 eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"
