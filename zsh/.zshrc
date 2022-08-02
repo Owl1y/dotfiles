@@ -1,21 +1,23 @@
-fortune | cowsay -f bud-frogs | lolcat
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+ export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/a/.oh-my-zsh"
-
+ export ZSH="/home/a/.oh-my-zsh"
+ export MANPAGER='lvim +Man!'
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+# ZSH_THEME="robbyrussell"
 
 path+=('/home/a/.local/bin')
+path+=('/home/a/go/bin')
+path+=('/home/a/scripts')
 
 plugins=(git)
 
-source $ZSH/oh-my-zsh.sh
-
+# source $ZSH/oh-my-zsh.sh
+source "$HOME/.config/zsh/zsh-functions"
+autoload -U compinit; compinit
 #setting vim as my default text editor
-export EDITOR=vim
+export EDITOR=lvim
 
 
 #   █████╗ ██╗     ██╗ █████╗ ███████╗███████╗███████╗
@@ -30,9 +32,7 @@ alias pacman-download="pacman -Sw"            # Download specified package(s) as
 alias pac="sudo pacman -S"                    # Install specific package(s) from the repositories
 alias pacman-install-file="sudo pacman -U"    # Install specific package not from the repositories but from a file 
 alias pacr="sudo pacman -R"                   # Remove the specified package(s), retaining its configuration(s) and required dependencies
-alias pacman-purge="sudo pacman -Rns"         # Remove the specified package(s), its configuration(s) and unneeded dependencies
-alias pacman-repoinfo="pacman -Si"            # Display information about a given package in the repositories
-alias pacsearch="pacman -Ss"                  # Search for package(s) in the repositories
+alias pacman-purge="sudo pacman -Rns"         # Remove the specified package(s), its configuration(s) and unneeded dependencies alias pacman-repoinfo="pacman -Si"            # Display information about a given package in the repositories alias pacsearch="pacman -Ss"                  # Search for package(s) in the repositories
 alias pacQi="pacman -Qi"              # Display information about a given package in the local database
 alias pacman-dbsearch="pacman -Qs"            # Search for package(s) in the local database
 alias paclist="pacman -Qdt"      # List all packages which are orphaned
@@ -58,7 +58,7 @@ alias yta="yt --audio-format -x"
 alias ytba="yt --audio-format best -x" #gets the best audio 
 alias ytbe='yt -f "bv+ba/b"' # best audio and video 
 alias ytbext='yt -S "ext"' # best extension Download 
-alias ytmp3="youtube-dl --extract-audio --audio-format mp3 "
+alias ytmp3="yt --extract-audio --audio-format mp3 "
 
 
 
@@ -67,12 +67,20 @@ alias lsa="exa --icons -a --group-directories-first"
 alias lt='exa --tree --icons --level=2'
 alias lta='exa --tree --icons'
 alias lla='ll -ah'
-alias lss="ls -s extension"
-alias lls="ll --sort newest"
+alias le="ls -l -s extension"
+alias lls="exa -la --icons --sort newest --group-directories-first"
+alias size="ls -l -s size"
+alias watchls='watch -cd --interval 0.1 "exa -la --icons --sort newest --group-directories-first"'
+alias sizew='watch -cd --interval 0.1 "exa -la --icons --sort size --group-directories-first"'
+alias namew='watch -cd --interval 0.1 "exa -la --icons --sort=name --group-directories-first"'
 
 alias mac='/var/lib/libvirt/images'
 alias spot="flatpak run com.spotify.Client"
+alias obs="flatpak run com.obsproject.Studio"
+alias killcmus="sudo kill -9 "$(pidof cmus)""
 
 eval "$(fnm env --use-on-cd)"
 eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"
+
+fortune | cowsay -f bud-frogs | lolcat
