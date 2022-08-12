@@ -1,20 +1,25 @@
 # If you come from bash you might have to change your $PATH.
  export PATH=$HOME/bin:/usr/local/bin:$PATH
+ export HISTFILE=~/.zsh_history
 
 # Path to your oh-my-zsh installation.
- export ZSH="/home/a/.oh-my-zsh"
+ export ZSH="/home/aj/.oh-my-zsh"
  export MANPAGER='lvim +Man!'
+ export __NV_PRIME_RENDER_OFFLOAD=1
+ export __GLX_VENDOR_LIBRARY_NAME=nvidia
+
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 # ZSH_THEME="robbyrussell"
 
-path+=('/home/a/.local/bin')
-path+=('/home/a/go/bin')
-path+=('/home/a/scripts')
+
+path+=('/home/aj/.local/bin')
+path+=('/home/aj/go/bin')
+path+=('/home/aj/scripts')
 
 plugins=(git)
 
 # source $ZSH/oh-my-zsh.sh
-source "$HOME/.config/zsh/zsh-functions"
+# source "$HOME/.config/zsh/zsh-functions"
 autoload -U compinit; compinit
 #setting vim as my default text editor
 export EDITOR=lvim
@@ -82,5 +87,18 @@ alias killcmus="sudo kill -9 "$(pidof cmus)""
 eval "$(fnm env --use-on-cd)"
 eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"
+
+loop () {
+    while ; do 
+        $@ ; 
+        sleep 1; 
+    done
+} 
+
+
+
+
+
+
 
 fortune | cowsay -f bud-frogs | lolcat

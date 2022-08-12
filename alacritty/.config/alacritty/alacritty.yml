@@ -15,7 +15,7 @@ font:
     family: DejaVuSansMono
     style: Bold Italic
 
-  size: 11
+  size: 8
 
 env:
   TERM: xterm-256color
