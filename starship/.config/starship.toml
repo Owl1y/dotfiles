@@ -70,3 +70,5 @@ symbol = " "
 [swift]
 symbol = "ﯣ "
 
+[lua]
+format = "via [ $version](bold blue) "

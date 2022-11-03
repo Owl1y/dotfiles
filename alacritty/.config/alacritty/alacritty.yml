@@ -1,21 +1,21 @@
 font:
   normal:
-    family: DejaVu Sans Mono
+    family: DejaVuSansMono
     style: Regular
 
   bold:
-    family: DejaVu Sans Mono
+    family: DejaVuSansMono
     style: Bold
 
   italic:
-    family: DejaVu Sans Mono
+    family: DejaVuSansMono 
     style: Italic
 
   bold_italic:
-    family: DejaVu Sans Mono
+    family: DejaVuSansMono
     style: Bold Italic
 
-  size: 11
+  size: 8
 
 env:
   TERM: xterm-256color
